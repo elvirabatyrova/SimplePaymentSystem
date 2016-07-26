@@ -14,6 +14,8 @@
 
     <context:component-scan base-package="ru.kpfu.itis.elvirabatyrova" />
 
+    <mvc:resources mapping="/resources/**" location="/resources/"/>
+
     <bean id="freemarkerConfig" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
         <property name="templateLoaderPath" value="/WEB-INF/views/"/>
         <property name="defaultEncoding" value="UTF-8"/>

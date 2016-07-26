@@ -31,8 +31,10 @@
         <property name="hibernate.connection.autocommit">
             false
         </property>
+
         <mapping class="ru.kpfu.itis.elvirabatyrova.model.Customer"/>
-        <!-- DB schema will be updated if needed -->
-        <!-- <property name="hbm2ddl.auto">update</property> -->
+        <mapping class="ru.kpfu.itis.elvirabatyrova.model.Biller"/>
+        <mapping class="ru.kpfu.itis.elvirabatyrova.model.Payment"/>
+
     </session-factory>
 </hibernate-configuration>

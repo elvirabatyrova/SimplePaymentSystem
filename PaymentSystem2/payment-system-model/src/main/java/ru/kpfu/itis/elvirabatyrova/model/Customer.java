@@ -1,6 +1,7 @@
 package ru.kpfu.itis.elvirabatyrova.model;
 
 import javax.persistence.*;
+import java.sql.Date;
 
 /**
  * Created by Pc on 25.07.2016.
@@ -11,17 +12,12 @@ import javax.persistence.*;
 public class Customer {
 
     private Integer id;
-    private String firstname;
-    private String secondname;
-    private String dateofbirth;
+    private String firstName;
+    private String secondName;
+    private Date dateOfBirth;
     private String address;
 
     public Customer() {
-    }
-
-    public Customer(String firstname, String secondname) {
-        this.firstname = firstname;
-        this.secondname = secondname;
     }
 
     @Id
@@ -38,33 +34,33 @@ public class Customer {
 
 
     @Basic
-    @Column(name = "firstname", nullable = false)
-    public String getFirstname() {
-        return firstname;
+    @Column(name = "first_name", nullable = false)
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setFirstname(String firstname) {
-        this.firstname = firstname;
-    }
-
-    @Basic
-    @Column(name = "secondname", nullable = false)
-    public String getSecondname() {
-        return secondname;
-    }
-
-    public void setSecondname(String secondname) {
-        this.secondname = secondname;
+    public void setFirstName(String firstname) {
+        this.firstName = firstname;
     }
 
     @Basic
-    @Column(name = "dateofbirth", nullable = false)
-    public String getDateofbirth() {
-        return dateofbirth;
+    @Column(name = "second_name", nullable = false)
+    public String getSecondName() {
+        return secondName;
     }
 
-    public void setDateofbirth(String dateofbirth) {
-        this.dateofbirth = dateofbirth;
+    public void setSecondName(String secondname) {
+        this.secondName = secondname;
+    }
+
+    @Basic
+    @Column(name = "date_of_birth", nullable = false)
+    public Date getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public void setDateOfBirth(Date dateofbirth) {
+        this.dateOfBirth = dateofbirth;
     }
 
     @Basic

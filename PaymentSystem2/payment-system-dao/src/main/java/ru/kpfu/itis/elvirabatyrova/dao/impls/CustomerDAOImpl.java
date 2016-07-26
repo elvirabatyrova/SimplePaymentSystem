@@ -20,9 +20,6 @@ public class CustomerDAOImpl implements CustomerDAO {
 
     Session session = HibernateUtil.getSessionFactory().openSession();
 
-//    @Autowired
-//    private SessionFactory sessionFactory;
-
     @Override
     public List<Customer> findAll() {
         Query q = session.createQuery("from Customer");
