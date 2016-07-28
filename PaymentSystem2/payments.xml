@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<payments>
+    <payment>
+        <customer>
+            <id>1</id>
+            <firstName>Elvira</firstName>
+            <lastName>Batyrova</lastName>
+            <dateOfBirth>24.05.1996</dateOfBirth>
+            <address>Kazan</address>
+        </customer>
+        <biller>
+            <id>1</id>
+            <companyName>Company 1</companyName>
+        </biller>
+        <account>123456781234</account>
+        <amount>18.38</amount>
+        <paymentDate>28.07.2016</paymentDate>
+    </payment>
+    <payment>
+        <customer>
+            <id>8</id>
+            <firstName>Elena</firstName>
+            <lastName>Andreva</lastName>
+            <dateOfBirth>24.05.1988</dateOfBirth>
+            <address>Kazan</address>
+        </customer>
+        <biller>
+            <id>6</id>
+            <companyName>Company 300</companyName>
+        </biller>
+        <account>1234581234</account>
+        <amount>5008.38</amount>
+        <paymentDate>27.07.2016</paymentDate>
+    </payment>
+</payments>

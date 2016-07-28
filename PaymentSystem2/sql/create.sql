@@ -17,5 +17,8 @@ CREATE TABLE payment (
   biller_id INTEGER NOT NULL,
   account BIGINT,
   amount DECIMAL(10,2) NOT NULL,
-  payment_date DATE
+  payment_date DATE,
+
+  FOREIGN KEY (customer_id) REFERENCES customer(id) ON UPDATE CASCADE ON DELETE CASCADE,
+  FOREIGN KEY (biller_id) REFERENCES biller(id) ON UPDATE CASCADE ON DELETE CASCADE
 );

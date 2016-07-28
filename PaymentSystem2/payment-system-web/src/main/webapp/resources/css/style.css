@@ -2,3 +2,46 @@
 	border-width: 1px;
 	color: rebeccapurple;
 }
+
+.menu {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.new-payment-btn {
+	float: right;
+	margin-left: 20px;
+}
+
+a {
+	color: black;
+}
+
+.row {
+	margin-bottom: 20px;
+}
+
+.selected-btn {
+	background-color: lightgrey;
+}
+
+.update-delete-btn {
+	float: right;
+	margin-left: 20px;
+}
+
+select {
+	height: 26px;
+}
+
+.error {
+	color: red;
+}
+
+.update-btn {
+	color: black;
+}
+
+#update_form label {
+	margin-right: 10px;
+}

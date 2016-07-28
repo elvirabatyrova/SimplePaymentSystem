@@ -1,7 +1,10 @@
 package ru.kpfu.itis.elvirabatyrova.dao.interfaces;
 
+import ru.kpfu.itis.elvirabatyrova.model.Biller;
+import ru.kpfu.itis.elvirabatyrova.model.Customer;
 import ru.kpfu.itis.elvirabatyrova.model.Payment;
 
+import java.sql.Date;
 import java.util.List;
 
 /**
@@ -10,5 +13,6 @@ import java.util.List;
 public interface PaymentDAO {
 
     List<Payment> findAll();
+    Payment create(Customer customer, Biller biller, Long account, double amount, Date paymentDate);
 
 }

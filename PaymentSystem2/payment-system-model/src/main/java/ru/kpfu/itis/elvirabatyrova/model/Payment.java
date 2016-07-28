@@ -21,6 +21,14 @@ public class Payment {
     public Payment() {
     }
 
+    public Payment(Customer customer, Biller biller, Long account, double amount, Date paymentDate) {
+        this.customer = customer;
+        this.biller = biller;
+        this.account = account;
+        this.amount = amount;
+        this.paymentDate = paymentDate;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "payment_id_seq")
     @SequenceGenerator(name = "payment_id_seq", sequenceName = "payment_id_seq", allocationSize = 1)

@@ -30,6 +30,11 @@
             <artifactId>payment-system-service</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>ru.kpfu.itis.elvirabatyrova</groupId>
+            <artifactId>payment-system-dao</artifactId>
+        </dependency>
+
         <!-- Spring -->
         <dependency>
             <groupId>org.springframework</groupId>
@@ -44,26 +49,6 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-core</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-config</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-taglibs</artifactId>
         </dependency>
 
         <!-- Hibernate -->
@@ -132,6 +117,18 @@
         <dependency>
             <groupId>com.itextpdf</groupId>
             <artifactId>itextpdf</artifactId>
+        </dependency>
+
+        <!-- JSON -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+        </dependency>
+
+        <!-- For file upload -->
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
         </dependency>
     </dependencies>
 

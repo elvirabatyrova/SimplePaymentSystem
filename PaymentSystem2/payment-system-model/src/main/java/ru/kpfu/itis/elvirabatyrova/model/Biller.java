@@ -16,6 +16,10 @@ public class Biller {
     public Biller() {
     }
 
+    public Biller(String companyName) {
+        this.companyName = companyName;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "biller_id_seq")
     @SequenceGenerator(name = "biller_id_seq", sequenceName = "biller_id_seq", allocationSize = 1)

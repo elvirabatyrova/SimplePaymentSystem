@@ -2,6 +2,7 @@ package ru.kpfu.itis.elvirabatyrova.dao.interfaces;
 
 import ru.kpfu.itis.elvirabatyrova.model.Customer;
 
+import java.sql.Date;
 import java.util.List;
 
 /**
@@ -11,5 +12,9 @@ import java.util.List;
 public interface CustomerDAO {
 
     List<Customer> findAll();
+    Customer create(String firstName, String secondName, Date dateOfBirth, String address);
+    void deleteById(Integer id);
+    void update(Integer id, String firstName, String secondName, Date dateOfBirth, String address);
+    Customer getById(Integer id);
 
 }
